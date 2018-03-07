@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		631ACF1F204FDD0F00FB1B30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ACF1E204FDD0F00FB1B30 /* AppDelegate.swift */; };
-		631ACF21204FDD0F00FB1B30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ACF20204FDD0F00FB1B30 /* ViewController.swift */; };
 		631ACF24204FDD0F00FB1B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631ACF22204FDD0F00FB1B30 /* Main.storyboard */; };
 		631ACF26204FDD0F00FB1B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631ACF25204FDD0F00FB1B30 /* Assets.xcassets */; };
 		631ACF29204FDD0F00FB1B30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631ACF27204FDD0F00FB1B30 /* LaunchScreen.storyboard */; };
 		631ACF34204FDD0F00FB1B30 /* Wed7marsJournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ACF33204FDD0F00FB1B30 /* Wed7marsJournalTests.swift */; };
 		631ACF3F204FDD0F00FB1B30 /* Wed7marsJournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ACF3E204FDD0F00FB1B30 /* Wed7marsJournalUITests.swift */; };
+		631ACF4D204FDE1A00FB1B30 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ACF4C204FDE1A00FB1B30 /* JournalTableViewController.swift */; };
+		631ACF4F204FE68F00FB1B30 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ACF4E204FE68F00FB1B30 /* JournalEntry.swift */; };
+		631ACF51204FED1500FB1B30 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ACF50204FED1500FB1B30 /* Journal.swift */; };
+		631ACF53204FF52E00FB1B30 /* JournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ACF52204FF52E00FB1B30 /* JournalEntryViewController.swift */; };
+		631ACF55204FFDC500FB1B30 /* NewJournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631ACF54204FFDC500FB1B30 /* NewJournalEntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		631ACF1B204FDD0F00FB1B30 /* Wed7marsJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wed7marsJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		631ACF1E204FDD0F00FB1B30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		631ACF20204FDD0F00FB1B30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		631ACF23204FDD0F00FB1B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		631ACF25204FDD0F00FB1B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		631ACF28204FDD0F00FB1B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		631ACF3A204FDD0F00FB1B30 /* Wed7marsJournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wed7marsJournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		631ACF3E204FDD0F00FB1B30 /* Wed7marsJournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wed7marsJournalUITests.swift; sourceTree = "<group>"; };
 		631ACF40204FDD0F00FB1B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		631ACF4C204FDE1A00FB1B30 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
+		631ACF4E204FE68F00FB1B30 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		631ACF50204FED1500FB1B30 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		631ACF52204FF52E00FB1B30 /* JournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryViewController.swift; sourceTree = "<group>"; };
+		631ACF54204FFDC500FB1B30 /* NewJournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJournalEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				631ACF1E204FDD0F00FB1B30 /* AppDelegate.swift */,
-				631ACF20204FDD0F00FB1B30 /* ViewController.swift */,
 				631ACF22204FDD0F00FB1B30 /* Main.storyboard */,
+				631ACF4C204FDE1A00FB1B30 /* JournalTableViewController.swift */,
 				631ACF25204FDD0F00FB1B30 /* Assets.xcassets */,
 				631ACF27204FDD0F00FB1B30 /* LaunchScreen.storyboard */,
 				631ACF2A204FDD0F00FB1B30 /* Info.plist */,
+				631ACF4E204FE68F00FB1B30 /* JournalEntry.swift */,
+				631ACF50204FED1500FB1B30 /* Journal.swift */,
+				631ACF52204FF52E00FB1B30 /* JournalEntryViewController.swift */,
+				631ACF54204FFDC500FB1B30 /* NewJournalEntryViewController.swift */,
 			);
 			path = Wed7marsJournal;
 			sourceTree = "<group>";
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				631ACF21204FDD0F00FB1B30 /* ViewController.swift in Sources */,
+				631ACF4F204FE68F00FB1B30 /* JournalEntry.swift in Sources */,
+				631ACF53204FF52E00FB1B30 /* JournalEntryViewController.swift in Sources */,
+				631ACF55204FFDC500FB1B30 /* NewJournalEntryViewController.swift in Sources */,
+				631ACF4D204FDE1A00FB1B30 /* JournalTableViewController.swift in Sources */,
 				631ACF1F204FDD0F00FB1B30 /* AppDelegate.swift in Sources */,
+				631ACF51204FED1500FB1B30 /* Journal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

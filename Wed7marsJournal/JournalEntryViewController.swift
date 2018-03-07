@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  JournalEntryViewController.swift
 //  Wed7marsJournal
 //
 //  Created by David Svensson on 2018-03-07.
@@ -8,18 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class JournalEntryViewController: UIViewController {
 
+    @IBOutlet weak var journalEntryContents: UITextView!
+    
+    var journalEntry: JournalEntry?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if let entry = journalEntry {
+            journalEntryContents.text = entry.contents
+        }
+    
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
-
